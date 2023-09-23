@@ -1,0 +1,291 @@
+body {
+  background-image: url(img/double-bubble-outline.png);
+}
+
+.container {
+  display: flex;
+}
+.buttons {
+  display: flex;
+}
+.buttons ul {
+  list-style-type: none;
+}
+.lists {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 45px;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  font-weight: 800;
+  /* background-color: blue; */
+}
+.buttons a {
+  text-decoration: none;
+  padding: 30px;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.logo1 {
+  /* background-color: aqua; */
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 500px;
+}
+.icon {
+  width: 70%;
+  height: auto;
+}
+.wrapper {
+  display: flex;
+  margin-top: 60px;
+  /* padding: 100px; */
+  margin-left: 100px;
+  /* background-color: aquamarine; */
+}
+.title {
+  /* font-size:xx-large;   */
+  font-family: "Fredericka the Great", cursive;
+  font-size: 100px;
+}
+.description {
+  font-family: "Poppins";
+  font-size: 30px;
+  display: flex;
+  font-weight: 400;
+}
+
+.printer {
+  max-width: 50%;
+}
+.get-started {
+  background-color: #2979f0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.get-started:hover {
+  background-color: #2a4a8a; /* Darker green on hover */
+}
+/* footer */
+footer {
+  margin-top: 20px;
+  background-color: #e8e8e8;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+.twitter {
+  background-color: #e8e8e8;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+/* card-components */
+.card-1 {
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+  justify-content: space-evenly;
+}
+
+.card-1:hover {
+  box-shadow: 0 4px 8px rgba(13, 84, 237, 0.2);
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.precise {
+  width: 100px;
+  height: 100px;
+}
+
+.inner-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-description2 {
+  font-size: 14px;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+.card-description3 {
+  font-size: 14px;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.card-title2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+  margin-left: 40px;
+}
+.card-title3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* testmonials */
+.testmonials {
+  margin-top: 100px;
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.white-card {
+  background-color: #ffffff;
+  width: 300px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 70px;
+  position: relative;
+  /* margin-right: 220px; */
+}
+.person-1 {
+  margin-left: -20px;
+  margin-top: -20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  background-color: #2979f0;
+}
+.tests-1 {
+  text-align: end;
+  font-weight: 800;
+}
+.words {
+  font-family: "Poppins", sans-serif;
+}
+.wrapper-white {
+  display: flex;
+  margin-top: 200px;
+  /* margin-left: 100px; */
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.x1 {
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  justify-content: center;
+}
+
+.paragraph{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.paragraph h3 {
+  color: #2a4a8a;
+  width: 500px;
+  /* padding: 40px; */
+  text-align: center;
+  /* align-items: center; */
+  
+}
+.form{
+  display: flex;
+  justify-content: center;
+  /* margin-right: 10px; */
+  margin-bottom: 120px;
+}
+.form input{
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.form button{
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #2979f0;
+}
+.form button:hover{
+  background-color: #4c6e9d;
+}
+
+
+
