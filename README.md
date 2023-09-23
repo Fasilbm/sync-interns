@@ -1,1 +1,1 @@
-# sync-intersns
+# sync-interns
