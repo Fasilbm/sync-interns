@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/cf996e343f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>music player</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="music-player">
+        <!--  -->
+
+        <img src="j.cole.jpg" alt="song image" class="song-img" />
+
+        <h1>On the street</h1>
+
+        <p>J.cole</p>
+
+        <audio id="song">
+          <source src="./jcole.mp3" type="audio/mpeg" />
+        </audio>
+
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <!-- <div><i class="fa-solid fa-backward"></i></div> -->
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="control-icon"></i>
+          </div>
+          <!-- <div><i class="fa-solid fa-forward"></i></div> -->
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const progress = document.getElementById("progress");
+      const song = document.getElementById("song");
+      const ctrlIcon = document.getElementById("control-icon");
+
+      song.onloadedmetadata = () => {
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+      };
+
+      const playPause = () => {
+        if (ctrlIcon.classList.contains("fa-pause")) {
+          song.pause();
+          ctrlIcon.classList.remove("fa-pause");
+          ctrlIcon.classList.add("fa-play");
+        } else {
+          song.play();
+          ctrlIcon.classList.add("fa-pause");
+          ctrlIcon.classList.remove("fa-play");
+        }
+      };
+
+      if (song.play()) {
+        setInterval(() => {
+          progress.value = song.currentTime;
+        }, 500);
+      }
+
+      progress.onchange = () => {
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+      };
+    </script>
+  </body>
+</html>
